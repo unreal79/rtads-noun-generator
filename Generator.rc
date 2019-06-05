@@ -1,0 +1,369 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT\r\n"
+    "#pragma code_page(1251)\r\n"
+    "#include ""res\\Generator.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Generator.ico"
+IDI_CHANGE_CLASS_LIST   ICON                    "res\\change_class_list.ico"
+IDI_HLINK_URL           ICON                    "HLINKCTRL\\res\\hlnkurl.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HLINK               CURSOR                  "HLINKCTRL\\res\\hlink.cur"
+IDC_DISABLED_HLINK      CURSOR                  "HLINKCTRL\\res\\disabled.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_HLINK_PROPERTIES DIALOG  0, 0, 207, 169
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "General"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_HLINK_URL,IDC_STATIC,7,7,18,20
+    EDITTEXT        IDC_NAME,44,14,156,25,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,44,193,1
+    LTEXT           "Address (URL):",IDC_URL_PROMPT,7,60,28,24
+    EDITTEXT        IDC_URL,44,63,156,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP
+END
+
+IDD_ABOUTBOX DIALOG  0, 0, 327, 286
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "О Генераторе падежей"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Генератор падежных имен   Версия 0.9.2.0",IDC_STATIC,15,
+                    10,148,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003-06 Андрей Гранкин",IDC_STATIC,15,20,120,
+                    8
+    DEFPUSHBUTTON   "OK",IDOK,138,265,50,16,WS_GROUP
+    GROUPBOX        "",IDC_STATIC,6,0,315,260
+    EDITTEXT        IDC_EDIT1,11,40,304,216,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Перенесено на Visual C++ Стасом Старковым",IDC_STATIC,
+                    15,30,158,8
+    LTEXT           "Предназначен для системы RTADS",IDC_STATIC_RTADS_HLINK,
+                    169,10,118,8
+    LTEXT           "<grandrey@mail.ru>",IDC_STATIC_GRANDREY_MAIL,138,20,69,
+                    8
+    LTEXT           "<stas_@fromru.com>",IDC_STATIC_STAS_MAIL,177,30,72,8
+END
+
+IDD_GENERATOR_DIALOG DIALOGEX 0, 0, 338, 299
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | 
+    WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Генератор падежных форм v 0.9.2.0"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_IEDIT,2,30,215,13,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    COMBOBOX        IDC_CLASS,25,213,64,135,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Не&одушевленный",IDC_ODUSH,39,5,70,20,BS_CENTER | 
+                    BS_VCENTER
+    PUSHBUTTON      "Еди&нственный",IDC_CHISLO,114,5,62,20,BS_CENTER | 
+                    BS_VCENTER
+    GROUPBOX        "&Род",IDC_STATIC,183,2,77,22
+    CONTROL         "M",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,
+                    187,12,18,8
+    CONTROL         "Ж",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,207,12,20,8
+    CONTROL         "Ср",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,233,12,22,8
+    CONTROL         "Не склон.",IDC_NOTSKLON,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,220,30,49,10
+    CONTROL         "Авто р.п.",IDC_RAUTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,220,45,49,11
+    CONTROL         "Авто д.п.",IDC_DAUTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,220,60,44,11
+    CONTROL         "Авто в.п.",IDC_VAUTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,220,75,46,11
+    CONTROL         "Авто т.п.",IDC_TAUTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,220,90,46,11
+    CONTROL         "Авто п.п.",IDC_PAUTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,220,120,48,11
+    PUSHBUTTON      "Код в &буфер",IDC_COPYTOCLIPBOARD,275,117,51,14,
+                    BS_CENTER | BS_VCENTER
+    EDITTEXT        IDC_REDIT,2,45,215,13,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    EDITTEXT        IDC_DEDIT,2,60,215,13,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    EDITTEXT        IDC_VEDIT,2,75,215,13,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    EDITTEXT        IDC_TEDIT2,2,104,215,13,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    EDITTEXT        IDC_PEDIT,2,119,215,13,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    CONTROL         "Авто т.п.2",IDC_TAUTO2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,220,105,52,10
+    EDITTEXT        IDC_TEDIT,2,90,215,13,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    EDITTEXT        IDC_RESEDIT,2,228,324,66,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    COMBOBOX        IDC_COMBO1,144,213,28,130,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,173,213,75,40,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "О программе",IDC_ABOUT,265,6,61,17,BS_CENTER | 
+                    BS_VCENTER
+    LTEXT           "Объект:",IDC_STATIC,7,10,28,8
+    LTEXT           "&Класс",IDC_STATIC,2,215,22,8
+    LTEXT           "Добавить",IDC_STATIC,109,215,34,8
+    PUSHBUTTON      "&Шрифт",IDC_CHOOSEFONT,275,101,51,14,BS_CENTER | 
+                    BS_VCENTER
+    PUSHBUTTON      "",IDC_CHANGE_CLASS_LIST,90,213,10,12,BS_ICON | BS_LEFT | 
+                    BS_TOP
+    EDITTEXT        IDC_EDIT1,2,142,248,25,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "Сформировать код",IDC_BUTTON1,250,212,76,14
+    PUSHBUTTON      "Добавить синоним",IDC_BUTTON2,253,143,73,14
+    LTEXT           "Лексемы:",IDC_STATIC,4,132,33,8
+    LTEXT           "Код RTADS:",IDC_STATIC,2,202,41,8
+    EDITTEXT        IDC_EDIT2,2,176,248,25,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "Добавить прилаг.",IDC_BUTTON3,254,178,72,14
+    LTEXT           "Прилагательные:",IDC_STATIC,4,168,61,8
+END
+
+IDD_MOD_CLASS_LIST DIALOGEX 0, 0, 285, 181
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Выберите нужные классы объектов"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_DOSTUP,3,15,85,163,LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_VIBRAN,117,15,85,163,LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Ок",IDOK,224,145,59,14
+    PUSHBUTTON      "Отмена",IDCANCEL,224,164,59,14
+    PUSHBUTTON      "X",IDC_BUTTON3,93,110,20,14
+    PUSHBUTTON      ">",IDC_BUTTON5,93,34,20,14
+    PUSHBUTTON      "XX",IDC_BUTTON4,93,127,20,14
+    PUSHBUTTON      ">>",IDC_BUTTON6,93,52,20,14
+    LTEXT           "Доступные классы",IDC_STATIC,6,5,83,8
+    LTEXT           "Выбранные классы",IDC_STATIC,120,5,84,8
+    DEFPUSHBUTTON   "&Добавить",IDC_ADDCUSTOM,210,34,75,14
+    EDITTEXT        IDC_EDITADDCUSTOM,208,15,75,14,ES_AUTOHSCROLL
+    LTEXT           "Добавить свой класс",IDC_STATIC,209,5,74,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_HLINK_POPUP MENU 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "&Открыть ссылку",             ID_POPUP_OPEN
+        MENUITEM "Скопировать в &Буфер обмена", ID_POPUP_COPYSHORTCUT
+        MENUITEM "&Свойства",                   ID_POPUP_PROPERTIES
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,9,1,0
+ PRODUCTVERSION 0,9,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x21L
+#else
+ FILEFLAGS 0x20L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_GENERATOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 326
+        BOTTOMMARGIN, 294
+    END
+
+    IDD_MOD_CLASS_LIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 283
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 178
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_GENERATOR_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO2, 0x403, 9, 0
+0xf0cf, 0xe1ee, 0xebe5, 0xe2ee, "\000" 
+    IDC_COMBO2, 0x403, 17, 0
+0xedc7, 0xeae0, 0xe2ee, 0xf220, 0xe1e0, 0xebf3, 0xf6ff, 0xe8e8, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_POPUP_COPYSHORTCUT   "Copy this shortcut to the clipboard"
+    ID_POPUP_ADDTOFAVOURITES "Add this shortcut to Favorites."
+    ID_POPUP_PROPERTIES     "Show the properties of this item"
+    ID_POPUP_ADDTOFAVORITES "Add this shortcut to your Favorites"
+    ID_POPUP_ADDTODESKTOP   "Add this shortcut to the Desktop"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_POPUP_OPEN           "Opens this shortcut"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HLINK_PROPERTIES    "Properties"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "О Генераторе падежей"
+    IDS_CLASSSTRINGS        "item\nthing\nroom\nfixeditem\nsurface\ncontainer\nnestedroom\nchairitem\nbeditem\nlightsource\nhiddenItem\nunderHider\nbehindHider\nsearchHider\nreadable\nfooditem\ndialItem\nswitchItem\ndarkroom\nActor\nmovableActor\nfollower\nbasicMe\ndecoration\nbuttonItem\nclothingItem\nobstacle\ndoorway\nlockableDoorway\nvehicle\nopenable\nqcontainer\nlockable\nkeyedLockable\nkeyItem\ntransparentItem\nbasicNumObj\nbasicStrObj\ndeepverb\ntravelVerb\nsysverb\nPrep\nobject\nfloatingItem\nnumberedObject\nhider\ndistantItem\nqsurface\nseethruItem\ndarkVerb\nclass\nfunction\n"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#include "res\Generator.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

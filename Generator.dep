@@ -1,0 +1,50 @@
+# Microsoft Developer Studio Generated Dependency File, included by Generator.mak
+
+.\Generator.cpp : \
+    ".\Generator.h"\
+    ".\GeneratorDlg.h"\
+    ".\GeneratorIniFile.h"\
+    
+
+.\Generator.rc : \
+    ".\HLINKCTRL\RES\disabled.cur"\
+    ".\HLINKCTRL\RES\HLINK.CUR"\
+    ".\HLINKCTRL\RES\HLNKURL.ICO"\
+    ".\RES\change_class_list.ico"\
+    ".\res\Generator.ico"\
+    ".\RES\icon1.ico"\
+    
+
+.\GeneratorDlg.cpp : \
+    ".\Generator.h"\
+    ".\GeneratorDlg.h"\
+    ".\GeneratorIniFile.h"\
+    ".\HLINKCTRL\Hlinkctl.h"\
+    ".\ModClassListDlg.h"\
+    
+
+.\GeneratorIniFile.cpp : \
+    ".\Generator.h"\
+    ".\GeneratorDlg.h"\
+    ".\GeneratorIniFile.h"\
+    
+
+.\HLINKCTRL\Hlinkctl.cpp : \
+    ".\HLINKCTRL\Hlinkctl.h"\
+    
+
+.\ModClassListDlg.cpp : \
+    ".\Generator.h"\
+    ".\GeneratorIniFile.h"\
+    ".\ModClassListDlg.h"\
+    
+.\regexer.cpp : \
+    ".\regexer.h"\
+    ".\Generator.h"\
+    ".\GeneratorDlg.h"\
+    ".\GeneratorIniFile.h"\
+
+.\StdAfx.cpp : \
+    "..\..\..\visual studio\vc98\include\basetsd.h"\
+    ".\StdAfx.h"\
+    
