@@ -3,6 +3,7 @@
 (с) 2003-2006 Андрей Гранкин
 Перенос на Visual C++ -- Станислав Старков, 2006 год
 
+![Image alt](https://github.com/unreal79/rtads-noun-generator/raw/master/screenshot.png)
 
 Советы по генерации падежных форм:
 
